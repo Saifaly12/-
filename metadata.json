@@ -1,0 +1,6 @@
+{
+  "name": "منصة المهارات الحركية | بيئة تعليمية تفاعلية",
+  "description": "بيئة تعليمية تفاعلية مقننة لتعلم المهارات الحركية وتنميتها وتقويمها وفق أسس البحث العلمي والتحليل الكينماتيكي للأداء الرياضي.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

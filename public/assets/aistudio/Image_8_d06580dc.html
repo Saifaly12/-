@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;font-family:'Cairo',sans-serif;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "tertiary-container": "#007952",
+          "background": "#faf8ff",
+          "primary": "#005c55",
+          "on-tertiary": "#ffffff",
+          "on-error": "#ffffff",
+          "outline": "#6e7977",
+          "primary-fixed-dim": "#80d5cb",
+          "surface-container-highest": "#dae2fd",
+          "on-primary-container": "#a3faef",
+          "tertiary-fixed-dim": "#4edea3",
+          "inverse-primary": "#80d5cb",
+          "on-secondary": "#ffffff",
+          "on-tertiary-fixed-variant": "#005236",
+          "surface-variant": "#dae2fd",
+          "secondary-fixed-dim": "#93ccff",
+          "on-tertiary-fixed": "#002113",
+          "on-secondary-fixed-variant": "#004b73",
+          "surface": "#faf8ff",
+          "on-secondary-fixed": "#001d31",
+          "on-error-container": "#93000a",
+          "surface-bright": "#faf8ff",
+          "outline-variant": "#bdc9c6",
+          "on-primary": "#ffffff",
+          "tertiary-fixed": "#6ffbbe",
+          "inverse-surface": "#283044",
+          "surface-container": "#eaedff",
+          "on-primary-fixed": "#00201d",
+          "error-container": "#ffdad6",
+          "on-primary-fixed-variant": "#00504a",
+          "surface-dim": "#d2d9f4",
+          "on-tertiary-container": "#99ffcd",
+          "error": "#ba1a1a",
+          "on-surface-variant": "#3e4947",
+          "secondary-fixed": "#cce5ff",
+          "surface-container-lowest": "#ffffff",
+          "surface-tint": "#006a63",
+          "tertiary": "#005e3f",
+          "on-background": "#131b2e",
+          "on-secondary-container": "#00476e",
+          "secondary-container": "#5bb8fe",
+          "on-surface": "#131b2e",
+          "surface-container-high": "#e2e7ff",
+          "inverse-on-surface": "#eef0ff",
+          "secondary": "#006398",
+          "primary-container": "#0f766e",
+          "surface-container-low": "#f2f3ff",
+          "primary-fixed": "#9cf2e8"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "margin": "2rem",
+          "space-lg": "1.5rem",
+          "space-xs": "0.25rem",
+          "gutter-mobile": "1rem",
+          "space-2xl": "3.5rem",
+          "space-xl": "2.25rem",
+          "gutter": "1.5rem",
+          "margin-mobile": "1rem",
+          "space-md": "1rem"
+        },
+        "fontFamily": {
+          "headline-lg": ["Cairo"],
+          "body-lg": ["Cairo"],
+          "headline-md": ["Cairo"],
+          "headline-lg-mobile": ["Cairo"],
+          "display-hero-mobile": ["Cairo"],
+          "body-sm": ["Cairo"],
+          "metric-digit": ["Cairo"],
+          "headline-xl-mobile": ["Cairo"],
+          "label-interactive": ["Cairo"],
+          "display-hero": ["Cairo"],
+          "headline-xl": ["Cairo"],
+          "label-badge": ["Cairo"],
+          "body-md": ["Cairo"],
+          "title-card": ["Cairo"]
+        },
+        "fontSize": {
+          "headline-lg": ["1.75rem", {"lineHeight": "1.35", "fontWeight": "700"}],
+          "body-lg": ["1.125rem", {"lineHeight": "1.7", "fontWeight": "400"}],
+          "headline-md": ["1.25rem", {"lineHeight": "1.4", "fontWeight": "600"}],
+          "headline-lg-mobile": ["1.375rem", {"lineHeight": "1.4", "fontWeight": "700"}],
+          "display-hero-mobile": ["2rem", {"lineHeight": "1.3", "fontWeight": "800"}],
+          "body-sm": ["0.875rem", {"lineHeight": "1.6", "fontWeight": "500"}],
+          "metric-digit": ["2.5rem", {"lineHeight": "1", "fontWeight": "800"}],
+          "headline-xl-mobile": ["1.625rem", {"lineHeight": "1.35", "fontWeight": "700"}],
+          "label-interactive": ["0.9375rem", {"lineHeight": "1.4", "fontWeight": "600"}],
+          "display-hero": ["3rem", {"lineHeight": "1.25", "fontWeight": "800"}],
+          "headline-xl": ["2.25rem", {"lineHeight": "1.3", "fontWeight": "700"}],
+          "label-badge": ["0.75rem", {"lineHeight": "1.2", "fontWeight": "700"}],
+          "body-md": ["1rem", {"lineHeight": "1.65", "fontWeight": "400"}],
+          "title-card": ["1.125rem", {"lineHeight": "1.45", "fontWeight": "600"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="p-space-lg"><div class="flex items-center gap-space-sm mb-space-xl"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-headline-md">sports_gymnastics</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary leading-tight">المهارات الحركية</span><span class="font-label-badge text-label-badge text-outline">بيئة تعليمية تفاعلية</span></div></div><div class="mb-space-lg px-space-md py-space-sm rounded-xl bg-surface-container-low flex items-center justify-between"><span class="font-label-badge text-label-badge text-on-surface-variant">السياق الأكاديمي</span><span class="px-space-sm py-space-xs rounded-full bg-primary/10 text-primary font-label-badge text-label-badge">بحث تدريسي</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-interactive rounded-xl shadow-[0_1px_3px_0_rgba(15,23,42,0.05)]"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-interactive text-label-interactive" data-path="overview" href="#"><span class="material-symbols-outlined">home</span><span>الرئيسية</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-interactive text-label-interactive" data-path="student-dashboard" href="#"><span class="material-symbols-outlined">dashboard</span><span>لوحة التحكم</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-interactive text-label-interactive" data-path="educational-units" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined">auto_stories</span><span>الوحدات التعليمية</span></div><span class="px-space-xs py-0.5 rounded-full bg-surface-container-highest text-secondary font-label-badge text-label-badge">16</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-all bg-primary-container text-on-primary font-label-interactive rounded-xl shadow-[0_1px_3px_0_rgba(15,23,42,0.05)]" data-path="unit-learning-experience" href="#"><span class="material-symbols-outlined">interactive_space</span><span>تجربة التعلم الحركي</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-interactive text-label-interactive" data-path="interactive-quizzes" href="#"><span class="material-symbols-outlined">quiz</span><span>الاختبارات التفاعلية</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-interactive text-label-interactive" data-path="assessment-results" href="#"><span class="material-symbols-outlined">fact_check</span><span>نتائج وتقويم الأداء</span></a></nav></div><div class="p-space-lg space-y-space-md"><div class="p-space-md rounded-xl bg-surface-container-low"><div class="flex items-center gap-space-xs text-primary mb-space-xs"><span class="material-symbols-outlined text-body-sm">analytics</span><span class="font-label-badge text-label-badge">مؤشر الاتساق الحركي</span></div><div class="flex items-baseline justify-between"><span class="font-headline-md text-headline-md text-on-surface">84%</span><span class="font-body-sm text-body-sm text-tertiary">مستوى متقدم</span></div></div><a class="flex items-center justify-center gap-space-xs w-full py-space-sm rounded-xl bg-surface-container text-primary font-label-interactive text-label-interactive hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="researcher-contact" href="#"><span class="material-symbols-outlined text-body-md">mail</span><span>تواصل مع الباحث</span></a></div></aside><div class="pr-72"><header class="fixed top-0 right-72 left-0 h-20 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute right-space-md top-1/2 -translate-y-1/2 text-outline">search</span><input class="w-full bg-surface-container-lowest text-on-surface placeholder-outline pr-11 pl-space-md py-2.5 rounded-xl outline-none focus:ring-2 focus:ring-primary text-body-sm font-body-sm shadow-[0_1px_3px_0_rgba(15,23,42,0.03)]" placeholder="بحث في المهارات، الوحدات التعليمية، ومعايير الحركة..." type="text"/></div><button class="px-space-md py-2.5 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-badge text-label-badge flex items-center gap-space-xs transition-colors whitespace-nowrap" type="button"><span class="material-symbols-outlined text-body-sm">filter_list</span><span>تصفية</span></button></div><div class="flex items-center gap-space-md"><span class="hidden xl:inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-tertiary/10 text-tertiary font-label-badge text-label-badge"><span class="material-symbols-outlined text-body-sm">verified</span><span>مشروع بحثي أكاديمي</span></span><button aria-label="التنبيهات الأكاديمية" class="w-10 h-10 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface flex items-center justify-center relative transition-colors" type="button"><span class="material-symbols-outlined text-headline-md">notifications</span><span class="absolute top-2 left-2 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-left"><div class="font-label-interactive text-label-interactive text-on-surface leading-tight">الباحث / الطالب الأكاديمي</div><div class="font-label-badge text-label-badge text-outline">قسم التربية البدنية وعلوم الحركة</div></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XY_jeTrJeLKTBO5bOItovzCwOF5TiuKznmwy5tJmiurSUe987GrKF1DHecb8xb6lUBjrt49nG0rf7MRSCRuhS3LPNQ0Vb0u-sHo07dNQT8WjWSEZWcS2prIMSy4CwaZbZ7nvmEi4-8sHQq33FyzaW4pE9ZUxvKKL7ZS1DI6q181SFXzx4044g6mIcfKAvHVx7DWvN0lQ2GTThXi1PPGcS9ipLVAhie3phqbd-MKvQkbPJk2LfPh80xxCrJ"/></div></div></header><main class="w-full pt-20 px-space-lg pb-space-2xl bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Unit Header & Breadcrumbs Block -->
+<section class="relative rounded-xl bg-surface-container-lowest p-space-lg shadow-sm mb-space-xl overflow-hidden">
+<!-- Ambient Kinetic Backdrop Graphic -->
+<div class="absolute -left-16 -top-20 w-80 h-80 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-secondary/5 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<!-- Breadcrumbs & Status Flag -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<nav aria-label="مسار التصفح" class="flex items-center gap-space-xs text-outline font-body-sm text-body-sm">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-body-sm">home</span>
+<span>الرئيسية</span>
+</a>
+<span class="material-symbols-outlined text-outline-variant text-body-sm">chevron_left</span>
+<a class="hover:text-primary transition-colors" href="#">الوحدات التعليمية</a>
+<span class="material-symbols-outlined text-outline-variant text-body-sm">chevron_left</span>
+<span class="text-primary font-label-interactive text-label-interactive">الوحدة العاشرة</span>
+</nav>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-md py-1 rounded-full bg-tertiary-container/15 text-tertiary font-label-badge text-label-badge flex items-center gap-1">
+<span class="material-symbols-outlined text-label-badge">bolt</span>
+<span>مستوى متقدم (أكاديمي)</span>
+</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge flex items-center gap-1">
+<span class="material-symbols-outlined text-label-badge">schedule</span>
+<span>مخصص: 45 دقيقة</span>
+</span>
+</div>
+</div>
+<!-- Main Unit Title & Description -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end mt-space-xs">
+<div class="lg:col-span-8 flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-label-badge text-label-badge uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-primary inline-block"></span>
+<span>منهاج التربية البدنية وعلوم الحركة الرياضية</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface leading-tight">
+            الوحدة التعليمية العاشرة: المهارات المركبة والتوافق الحركي المعقد
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mt-space-xs">
+            دراسة تحليلية وتطبيقية لضبط التوازن والانتقال الحركي السريع مع الربط التوافقي وفق المعايير الكينماتيكية لمركز ثقل الجسم وتحليل زوايا الدفع الميداني.
+          </p>
+</div>
+<!-- Progress Matrix Card -->
+<div class="lg:col-span-4 bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-interactive text-label-interactive text-on-surface">إنجاز الوحدة الكلي</span>
+<div class="flex items-baseline gap-1">
+<span class="font-metric-digit text-headline-lg text-primary">65</span>
+<span class="font-headline-md text-headline-md text-primary">%</span>
+</div>
+</div>
+<!-- RTL Progress Bar -->
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden" dir="rtl">
+<div class="h-full bg-primary rounded-full transition-all duration-700 ease-out" style="width: 65%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-badge text-label-badge text-outline mt-space-xs">
+<span class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-body-sm">verified_user</span>
+<span>تم اجتياز 3 أجزاء</span>
+</span>
+<span>متبقي جزآن (الاختبار والتطبيق)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sticky Horizontal Navigation Sub-Menu -->
+<nav aria-label="أقسام الوحدة الدراسية" class="sticky top-20 z-30 bg-surface/95 backdrop-blur-md rounded-xl shadow-sm p-space-xs mb-space-xl flex items-center gap-space-xs overflow-x-auto">
+<a class="unit-nav-btn active px-space-md py-space-sm rounded-lg font-label-interactive text-label-interactive bg-primary-container text-on-primary whitespace-nowrap flex items-center gap-space-xs transition-all shadow-sm" href="#theoretical-section">
+<span class="material-symbols-outlined text-body-md">menu_book</span>
+<span>[1] الشرح النظري والمفاهيم</span>
+</a>
+<a class="unit-nav-btn px-space-md py-space-sm rounded-lg font-label-interactive text-label-interactive text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface whitespace-nowrap flex items-center gap-space-xs transition-all" href="#sequential-gallery">
+<span class="material-symbols-outlined text-body-md">view_carousel</span>
+<span>[2] مراحل الأداء المتسلسل</span>
+</a>
+<a class="unit-nav-btn px-space-md py-space-sm rounded-lg font-label-interactive text-label-interactive text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface whitespace-nowrap flex items-center gap-space-xs transition-all" href="#video-player-section">
+<span class="material-symbols-outlined text-body-md">play_circle</span>
+<span>[3] الفيديو التعليمي والتحليلي</span>
+</a>
+<a class="unit-nav-btn px-space-md py-space-sm rounded-lg font-label-interactive text-label-interactive text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface whitespace-nowrap flex items-center gap-space-xs transition-all" href="#exercises-section">
+<span class="material-symbols-outlined text-body-md">fitness_center</span>
+<span>[4] التمرينات التطبيقية المقننة</span>
+</a>
+<a class="unit-nav-btn px-space-md py-space-sm rounded-lg font-label-interactive text-label-interactive text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface whitespace-nowrap flex items-center gap-space-xs transition-all" href="#assessment-section">
+<span class="material-symbols-outlined text-body-md">checklist_rtl</span>
+<span>[5] التقويم ورصد الأداء الحركي</span>
+</a>
+</nav>
+<!-- SECTION 1: THEORETICAL & CONCEPTUAL FRAMEWORK -->
+<section class="flex flex-col gap-space-lg mb-space-2xl" id="theoretical-section">
+<!-- Section Title Block -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-headline-md text-headline-md">
+          01
+        </div>
+<div>
+<span class="font-label-badge text-label-badge text-outline uppercase tracking-wider">التأصيل العلمي</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">الشرح النظري والمفاهيم الكينماتيكية</h2>
+</div>
+</div>
+<span class="px-space-md py-1 rounded-full bg-surface-container-high font-label-badge text-label-badge text-on-surface-variant">
+        المرجع: الدليل الأكاديمي لعلوم الحركة الرياضية
+      </span>
+</div>
+<!-- Grid: Definition & Bio-Mechanics Details -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Main Overview & Biomechanical Description -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Definition Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary font-title-card text-title-card">
+<span class="material-symbols-outlined">psychology_alt</span>
+<h3>مفهوم التوافق الحركي المركب وأهميته الفسيولوجية</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            يُعرّف التوافق الحركي المعقد بأنه القدرة العصبية-العضلية الفائقة على دمج أكثر من نمط حركي أحادي داخل سلسلة متصلة تتسم بالسلاسة، وتعتمد أساساً على سرعة معالجة الإشارات الحسية الدهليزية واستجابة المستقبلات الذاتية العضلية لضبط مركز ثقل الجسم (<span class="font-semibold text-primary">Center of Mass</span>) دون فقدان الزخم المتولد.
+          </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-headline-md">speed</span>
+<div class="flex flex-col">
+<span class="font-label-interactive text-label-interactive text-on-surface">السرعة الإدراكية</span>
+<span class="font-body-sm text-body-sm text-outline">زمن استجابة أقل من 0.24 ثانية</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-md">balance</span>
+<div class="flex flex-col">
+<span class="font-label-interactive text-label-interactive text-on-surface">التوازن الديناميكي</span>
+<span class="font-body-sm text-body-sm text-outline">انحراف لا يتجاوز 4 درجات</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-headline-md">compress</span>
+<div class="flex flex-col">
+<span class="font-label-interactive text-label-interactive text-on-surface">كفاءة الطاقة</span>
+<span class="font-body-sm text-body-sm text-outline">تقليل الجهد العضلي الزائد</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Biomechanical Description & Mass Center Analysis -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-secondary font-title-card text-title-card">
+<span class="material-symbols-outlined">biotech</span>
+<h3>التحليل الكينماتيكي لحركة الجسم ومسار مركز الثقل</h3>
+</div>
+<span class="px-space-sm py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-badge text-label-badge">رسم إشعاعي ثلاثي الأبعاد</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            عند تنفيذ الانتقال الحركي السريع، ينخفض خط عمل مركز ثقل الجسم رأسياً بمقدار يتراوح بين 12 إلى 15 سم خلال المرحلة الانتقالية، لتقليص عزم القصور الذاتي الدوراني وتمكين الجذع من تغيير المتجه بزوايا حادة.
+          </p>
+<!-- Biomechanical Visual Diagram SVG -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md flex flex-col items-center justify-center relative overflow-hidden">
+<svg class="w-full h-44 text-primary" fill="none" viewbox="0 0 700 200" xmlns="http://www.w3.org/2000/svg">
+<!-- Grid background lines -->
+<line stroke="#cbd5e1" stroke-dasharray="6 6" stroke-width="1.5" x1="0" x2="700" y1="160" y2="160"></line>
+<line stroke="#cbd5e1" stroke-dasharray="4 4" stroke-width="0.75" x1="0" x2="700" y1="100" y2="100"></line>
+<!-- Trajectory curve -->
+<path d="M 50 140 Q 200 40 350 90 T 650 130" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"></path>
+<!-- Points with biomechanical notations -->
+<circle cx="50" cy="140" fill="#005c55" r="7"></circle>
+<circle cx="210" cy="50" fill="#006398" r="8"></circle>
+<circle cx="350" cy="90" fill="#007952" r="7"></circle>
+<circle cx="650" cy="130" fill="#ba1a1a" r="7"></circle>
+<!-- Labels inside SVG -->
+<text fill="#3e4947" font-family="Cairo" font-size="12" font-weight="bold" text-anchor="middle" x="50" y="180">نقطة الارتكاز</text>
+<text fill="#006398" font-family="Cairo" font-size="12" font-weight="bold" text-anchor="middle" x="210" y="32">أقصى ارتفاع مسار (Apex)</text>
+<text fill="#007952" font-family="Cairo" font-size="12" font-weight="bold" text-anchor="middle" x="350" y="70">الانتقال الزاوي 72°</text>
+<text fill="#ba1a1a" font-family="Cairo" font-size="12" font-weight="bold" text-anchor="middle" x="650" y="180">تشتيت قوة الارتطام</text>
+<!-- Dynamic Force Vector Arrow -->
+<path d="M 210 50 L 260 20" marker-end="url(#arrow)" stroke="#006398" stroke-width="2"></path>
+<defs>
+<marker id="arrow" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="5" refy="5" viewbox="0 0 10 10">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#006398"></path>
+</marker>
+</defs>
+</svg>
+<div class="flex items-center justify-between w-full pt-space-xs font-label-badge text-label-badge text-outline">
+<span>المحور السيني: المسافة المقطوعة (متر)</span>
+<span>المحور الصادي: ارتفاع مركز الثقل (سم)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Educational Objectives Stack (3 Domains) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md h-full">
+<div class="flex items-center gap-space-xs text-primary font-title-card text-title-card">
+<span class="material-symbols-outlined">flag</span>
+<h3>الأهداف التعليمية والسلوكية</h3>
+</div>
+<span class="font-body-sm text-body-sm text-outline">المخرجات المعيارية المستهدفة بنهاية الوحدة</span>
+<div class="flex flex-col gap-space-md mt-space-xs">
+<!-- Cognitive Objective -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs border-r-4 border-secondary">
+<div class="flex items-center justify-between">
+<span class="font-label-interactive text-label-interactive text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-body-md">menu_book</span>
+<span>المجال المعرفي</span>
+</span>
+<span class="font-label-badge text-label-badge bg-surface-container-highest text-secondary px-2 py-0.5 rounded-full">استيعاب</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                أن يشرح المتعلم الأساس الميكانيكي لدوران الجذع وتوزيع ثقل القدمين بدقة علمية تتجاوز 85%.
+              </p>
+</div>
+<!-- Motor Skill Objective -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs border-r-4 border-primary">
+<div class="flex items-center justify-between">
+<span class="font-label-interactive text-label-interactive text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-body-md">sports_gymnastics</span>
+<span>المجال المهاري الحركي</span>
+</span>
+<span class="font-label-badge text-label-badge bg-primary/10 text-primary px-2 py-0.5 rounded-full">إتقان</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                أن يؤدي المتعلم تتابع الخطوات الانتقالية مع التوقف الاتزاني السريع في زمن لا يتعدى 3.2 ثوانٍ.
+              </p>
+</div>
+<!-- Affective Objective -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs border-r-4 border-tertiary">
+<div class="flex items-center justify-between">
+<span class="font-label-interactive text-label-interactive text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-body-md">sentiment_very_satisfied</span>
+<span>المجال الانفعالي / الوجداني</span>
+</span>
+<span class="font-label-badge text-label-badge bg-tertiary/10 text-tertiary px-2 py-0.5 rounded-full">اتجاه إيجابي</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                أن يُبدي المتعلم ثقة ودافعية ذاتية أثناء محاولات المعايرة الحركية وتصحيح زوايا الهبوط.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- The 3 Core Execution Phases Bento -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs text-primary font-title-card text-title-card">
+<span class="material-symbols-outlined">timeline</span>
+<h3>المراحل الفنية المعيارية للأداء الحركي</h3>
+</div>
+<span class="font-label-badge text-label-badge text-outline">تتابع زمني ثلاثي النطاق</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Preparatory Phase -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-primary">المرحلة 01</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-badge text-label-badge">التمهيد والإعداد</span>
+</div>
+<h4 class="font-label-interactive text-label-interactive text-on-surface">وقفة التأهب وخفض مركز الثقل</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            اتساع القدمين بعرض الكتفين، انثناء مفصلي الركبتين بزاوية 110-120 درجة، ميل الجذع قليلاً للأمام لتهيئة العضلات الباسطة.
+          </p>
+<div class="mt-space-xs flex items-center gap-1 text-outline font-label-badge text-label-badge">
+<span class="material-symbols-outlined text-body-sm text-secondary">check_circle</span>
+<span>نقطة التركيز: توزيع الوزن على مشطي القدمين</span>
+</div>
+</div>
+<!-- Main Execution Phase -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs border-t-2 border-primary">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-primary">المرحلة 02</span>
+<span class="px-space-sm py-0.5 rounded bg-primary/10 text-primary font-label-badge text-label-badge">الأداء الرئيسي</span>
+</div>
+<h4 class="font-label-interactive text-label-interactive text-on-surface">الدفع الانفجاري والربط التوافقي</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            انطلاق حركي متزامن عبر مد مفصل الكاحل والركبة مع مرجحة الذراع المعاكسة للتوجيه الحركي نحو الهدف بزاوية مسار مثالية.
+          </p>
+<div class="mt-space-xs flex items-center gap-1 text-outline font-label-badge text-label-badge">
+<span class="material-symbols-outlined text-body-sm text-primary">check_circle</span>
+<span>نقطة التركيز: تماسك عضلات الجذع (Core)</span>
+</div>
+</div>
+<!-- Follow-through Phase -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-primary">المرحلة 03</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-badge text-label-badge">المتابعة والختام</span>
+</div>
+<h4 class="font-label-interactive text-label-interactive text-on-surface">امتصاص الصدمة واستعادة التوازن</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            هبوط مرن يبدأ من مقدمة القدمين ثم الكعبين مع انثناء تعويضي في الركبتين لامتصاص طاقة الارتطام واستقرار الجذع.
+          </p>
+<div class="mt-space-xs flex items-center gap-1 text-outline font-label-badge text-label-badge">
+<span class="material-symbols-outlined text-body-sm text-tertiary">check_circle</span>
+<span>نقطة التركيز: تفادي الارتداد الخلفي المفاجئ</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Common Mistakes vs. Corrective Feedback Interactive Table -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-error font-title-card text-title-card">
+<span class="material-symbols-outlined">rule</span>
+<h3>مصفوفة الأخطاء الشائعة واستراتيجيات التصحيح الفوري</h3>
+</div>
+<span class="font-label-badge text-label-badge text-outline">تشخيص ميداني دقيق</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-right border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface font-label-interactive text-label-interactive">
+<th class="p-space-md rounded-r-lg">الخطأ الفني الشائع</th>
+<th class="p-space-md">السبب الكينماتيكي / العضلي</th>
+<th class="p-space-md">الإجراء والتغذية الراجعة التصحيحية</th>
+<th class="p-space-md rounded-l-lg text-center">التأثير على الأداء</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm divide-y divide-surface-container-high">
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="p-space-md font-label-interactive text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span>استقامة الركبتين المفرطة أثناء وقفة الاستعداد</span>
+</td>
+<td class="p-space-md text-on-surface-variant">
+                ارتفاع مفرط في مركز ثقل الجسم يحد من مرونة الدفع المبدئي.
+              </td>
+<td class="p-space-md text-primary font-medium">
+                تطبيق تمرين القرفصاء الجزئي الموجه أمام مرآة تحليليّة وضبط زاوية 110°.
+              </td>
+<td class="p-space-md text-center">
+<span class="px-space-sm py-1 rounded bg-error-container text-on-error-container font-label-badge text-label-badge">فقدان 35% من قوة التسارع</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="p-space-md font-label-interactive text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span>عدم توافق حركة الذراع مع انطلاق الرجلين</span>
+</td>
+<td class="p-space-md text-on-surface-variant">
+                خلل في التوقيت العصبي العضلي وافتقار لتوافق السلاسل الكينماتيكية.
+              </td>
+<td class="p-space-md text-primary font-medium">
+                عزل الذراعين وتدريبهما بإشارات صوتية متواترة (Metronome) بمعدل 60 نبضة/دقيقة.
+              </td>
+<td class="p-space-md text-center">
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge">انحراف مسار الحركة 15°</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="p-space-md font-label-interactive text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span>الهبوط المفاجئ على الكعبين بارتطام شديد</span>
+</td>
+<td class="p-space-md text-on-surface-variant">
+                غياب امتصاص القوة الارتدادية وتأخر في عمل العضلة ذات الرؤوس الفخذية.
+              </td>
+<td class="p-space-md text-primary font-medium">
+                التدريب على القفز والهبوط الصامت فوق مرتبة إسفنجية مضغوطة بسماكة 10 سم.
+              </td>
+<td class="p-space-md text-center">
+<span class="px-space-sm py-1 rounded bg-error-container text-on-error-container font-label-badge text-label-badge">إجهاد مرتفع للمفاصل</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- SECTION 2: SEQUENTIAL PHOTO GALLERY & LIGHTBOX -->
+<section class="flex flex-col gap-space-lg mb-space-2xl" id="sequential-gallery">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center font-headline-md text-headline-md">
+          02
+        </div>
+<div>
+<span class="font-label-badge text-label-badge text-outline uppercase tracking-wider">التتبع الحركي البصري</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">معرض الصور المتسلسلة والمراحل الكينماتيكية</h2>
+</div>
+</div>
+<span class="px-space-md py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-badge text-label-badge">
+        التقاط فائق الدقة (120 إطار/ثانية)
+      </span>
+</div>
+<!-- 4 Sequential Step Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow group">
+<div class="relative w-full h-48 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An athletic male gymnast in sports attire positioned in a focused ready-stance preparation posture, knees angled at 115 degrees, biomechanical angle overlay in teal and cyan graphics on gym floor, academic photography, crisp lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE5GQi2UacWQiSZSg-Zoz8i2CjV4zuYjiP6RvNHM-LqayNvmiA3QHd4BqW82pSxFA-DIyQWhbCW9WRr0xkjN-K3PC_i4jfgjr5YAmH7IOicWtp7PZCs6tYPLE9-jzSuHCh6nlohhjzf5GRM0Na3R75IWGg2LnqkpVl5mCQ-2oNYFNF0oxF0_55IQ4WECL7wi3z5rp96CB4Jey0TH5L9Dxe0rU3rz6ufuEf-0Qd5Ho-j-eT5htEytZJPA"/>
+<div class="absolute top-2 right-2 bg-on-background/80 text-background px-2.5 py-0.5 rounded-full font-label-badge text-label-badge flex items-center gap-1">
+<span>الطور 01</span>
+</div>
+<button class="lightbox-btn absolute bottom-2 left-2 w-8 h-8 rounded-lg bg-surface-container-lowest/90 text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" data-desc="انثناء الركبتين بزاوية 115 درجة مع تمركز مركز الثقل عمودياً بين القدمين لتوليد أقصى استجابة عضلية." data-title="وقفة الاستعداد وتمركز مركز الثقل" type="button">
+<span class="material-symbols-outlined text-body-md">zoom_in</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-badge text-label-badge text-primary">المرحلة التمهيدية</span>
+<h4 class="font-label-interactive text-label-interactive text-on-surface">وقفة الاستعداد وتمركز الثقل</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            تأصيل الاتزان المسبق وتثبيت القدمين بزاوية متناظرة لتقليل الاهتزاز العضلي.
+          </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow group">
+<div class="relative w-full h-48 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dynamic shot of a track and field athlete exploding forward into movement initiation phase, calf muscles flexed, angled forward thrust at 45 degrees with luminous motion vector arrows in teal, high-speed sports laboratory setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYo6WW_nuGjUM2prb4V3aQC263v0xuUF79CP0szn3meyJK8-rvhPaHow9s63jELMZbJzXfvNWrnUY7yOhwVXarKKihvvR9JOICLtjm0unwIhleEOwCvlFJsGhBdtEDLg-tDg4C_pg46c6juMdU2OaMYbltOZ-AznG7kJ7AdtKWdlwVWx7XZfb_8q-yJzrHpQcC3PdbiK6XY1_yRqbnZPlo1k2oDs_PL_4cqzTeF0lXHUdCEw_SdSBgNA"/>
+<div class="absolute top-2 right-2 bg-on-background/80 text-background px-2.5 py-0.5 rounded-full font-label-badge text-label-badge flex items-center gap-1">
+<span>الطور 02</span>
+</div>
+<button class="lightbox-btn absolute bottom-2 left-2 w-8 h-8 rounded-lg bg-surface-container-lowest/90 text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" data-desc="امتداد كامل لمفاصل الساق الخلفية بزاوية دفع مثالية 45 درجة لتوجيه كمية الحركة نحو الأمام." data-title="بدء الدفع والتسارع الحركي" type="button">
+<span class="material-symbols-outlined text-body-md">zoom_in</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-badge text-label-badge text-secondary">الانطلاق الحركي</span>
+<h4 class="font-label-interactive text-label-interactive text-on-surface">بدء الدفع والتسارع الخطي</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            امتداد متكامل للساقين مع تزامن انقباض عضلات الإليتين والرباط الصليبي.
+          </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow group">
+<div class="relative w-full h-48 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Mid-air suspension execution apex of an agile gymnast jumping, perfect symmetrical body extension, arms synchronized, glowing kinematic skeletal tracking lines highlighted in neon emerald green, professional athletic laboratory." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOnyQ8LARapMaq86E6Ymw7G9pibYhieNf-6ImC3xg9DoTdB7TPkrf3pj_FlJNIKs6gCmnHj3M0Y1kKWi8jc-aDxr6s4XypfuwFDYAOnErxs5aifjmjkxavvQWT--Er6m5jMzNfjGhlucTMe4fk3j9xdp5vmFO1nYG-x_ByVhueIjFIH0600YPIVii9pCeCVIptJhzfcnsuzUoNyM3oovDlL6o4J8W_TuGBLF4PJCnax-2pEjNX_jLDpA"/>
+<div class="absolute top-2 right-2 bg-primary text-on-primary px-2.5 py-0.5 rounded-full font-label-badge text-label-badge flex items-center gap-1">
+<span>الطور 03 (الذروة)</span>
+</div>
+<button class="lightbox-btn absolute bottom-2 left-2 w-8 h-8 rounded-lg bg-surface-container-lowest/90 text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" data-desc="تحقيق الامتداد الجسدي التام في نقطة التعليق الفراغي (Apex) مع تماسك توافقي لكافة عضلات الجذع." data-title="لحظة ذروة الأداء والتوافق" type="button">
+<span class="material-symbols-outlined text-body-md">zoom_in</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-badge text-label-badge text-tertiary">نقطة الذروة (Apex)</span>
+<h4 class="font-label-interactive text-label-interactive text-on-surface">أقصى امتداد وتوافق عضلي</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            توازن هوائي تام وتوافق بين الجذع والأطراف قبل بدء مرحلة الاستقبال.
+          </p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow group">
+<div class="relative w-full h-48 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Controlled safe landing follow-through posture by athlete on blue sports turf, knees flexing gently to cushion impact, upright posture with arms stabilizing balance, biomechanical balance force vectors in soft gold." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgtsjeNQIrweuRxtcndWP_OaADU782yJGELjk53TKPEl2Ymyzjn6iHo6T5VRdom7pynqQNJQy7HSNeFkwuPiLvWZKgLpGgenZeqcr-aydpMOghhwrtPFe5yRpm2NWInRBnweoNAy0yvDjq6EQE7Hkou66-XGpsSYWLS-g_dL5h5K4d16orqejlUEMw9Mjn7-r6BCWsy0O3-5nAsAMkfUOwK7nrbmQAIWw2CNisOd7rr-HNYgAzdsfqfg"/>
+<div class="absolute top-2 right-2 bg-on-background/80 text-background px-2.5 py-0.5 rounded-full font-label-badge text-label-badge flex items-center gap-1">
+<span>الطور 04</span>
+</div>
+<button class="lightbox-btn absolute bottom-2 left-2 w-8 h-8 rounded-lg bg-surface-container-lowest/90 text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" data-desc="امتصاص القوى الرأسية الصاعدة بثني الركبتين 120 درجة وتثبيت مركز الثقل دون ترنح جانبي." data-title="المتابعة والهبوط واستعادة التوازن" type="button">
+<span class="material-symbols-outlined text-body-md">zoom_in</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-badge text-label-badge text-outline">المرحلة الختامية</span>
+<h4 class="font-label-interactive text-label-interactive text-on-surface">الهبوط الآمن واستعادة الاتزان</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            امتصاص طاقة النزول على مشطي القدمين بسلاسة تمنع إجهاد الأوتار المفصلية.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Lightbox Modal Overlay (Controlled by JS) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden items-center justify-center p-space-md" id="gallery-lightbox">
+<div class="bg-surface-container-lowest rounded-xl max-w-2xl w-full p-space-lg shadow-xl flex flex-col gap-space-md relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">visibility</span>
+<h3 class="font-headline-md text-headline-md text-on-surface" id="lightbox-modal-title">تفاصيل المرحلة الكينماتيكية</h3>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high flex items-center justify-center" id="lightbox-close-btn" type="button">
+<span class="material-symbols-outlined text-body-md">close</span>
+</button>
+</div>
+<div class="w-full h-72 rounded-lg bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Enlarged detailed biomechanical photo of the motor skill execution with overlay indicators and angle measures in teal color scheme." id="lightbox-modal-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnSA1L6mXitBbhpAeA9blYr2FoiU6YjEtjvrb1CDZsVmvgyBMLg0IRJIlTGJWhJyzxhHyxFN4u87_fZz-E8CjVF3-DyhB-KjsRavrDcsgwdwEMxhmQQzuNbd4U76e4wAfNejw3rnNUIIcfiUDFq6GX7M4DWqu9aSMoTDIzTROGK_3cp_h9RbaRsVxX3DH8MopyAk9L8erbfM_Eq7aICdS7wj8k3Pp5ssnI5alpKcKHRu53UaGLTu-LxQ"/>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" id="lightbox-modal-desc">
+        وصف تفصيلي للتحليل الزاوي ومواضع الارتكاز.
+      </p>
+<div class="flex items-center justify-end">
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-interactive text-label-interactive" id="lightbox-confirm-btn" type="button">
+          إغلاق المعاينة
+        </button>
+</div>
+</div>
+</div>
+<!-- SECTION 3: INTERACTIVE VIDEO LEARNING PLAYER -->
+<section class="flex flex-col gap-space-lg mb-space-2xl" id="video-player-section">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-tertiary/10 text-tertiary flex items-center justify-center font-headline-md text-headline-md">
+          03
+        </div>
+<div>
+<span class="font-label-badge text-label-badge text-outline uppercase tracking-wider">الوسائط التفاعلية عالية الدقة</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">الفيديو التعليمي والتحليل الحركي البطيء</h2>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-md py-1 rounded-full bg-primary/10 text-primary font-label-badge text-label-badge flex items-center gap-1">
+<span class="material-symbols-outlined text-label-badge">slow_motion_video</span>
+<span>دعم الحركة البطيئة 0.5x</span>
+</span>
+</div>
+</div>
+<!-- Main Video Grid Layout: 16:9 Player + Interactive Side Panel -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Video Player (16:9 Container) -->
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<div class="relative w-full aspect-video rounded-xl bg-inverse-surface overflow-hidden shadow-md group">
+<!-- Video Poster Placeholder -->
+<div class="bg-cover bg-center w-full h-full flex flex-col justify-between p-space-md relative" data-alt="High-definition cinematic capture of physical education students executing complex motor agility drills with digital measurement overlays and teal motion trails in an academic sports hall." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAs18POzNA2R2Tk35Oo3lOXfipxBkPpbKGXcW62Y4yYfX4527NwVR46sq1wMzUuY0nDIcuKzIPF8X1OzDcq2yqv3PaloBQi5gN5y7XYb89AZazGUwU59yxaY8HhwYqQ7TNQEsCKw7BZk9aqAYkblZMG36f8R1rJb-HwrrGZ7whiOJbkXJ8SAeYEit0LLknrDCM9KS0Fvq-X4608hPnF-e2vOMJqyC55-fvGFumMhnMnPrvvBnMhSNmvWQ')">
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-transparent to-inverse-surface/40"></div>
+<!-- Top Overlay Indicators -->
+<div class="relative z-10 flex items-center justify-between">
+<span class="px-space-sm py-1 rounded bg-inverse-surface/80 text-inverse-on-surface font-label-badge text-label-badge flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span>بث تعليمي فائق الوضوح (1080p 60fps)</span>
+</span>
+<span class="px-space-sm py-1 rounded bg-inverse-surface/80 text-primary-fixed font-label-badge text-label-badge">
+                زمن المقطع: 08:45
+              </span>
+</div>
+<!-- Center Play Trigger -->
+<div class="relative z-10 flex items-center justify-center my-auto">
+<button aria-label="تشغيل الفيديو التعليمي" class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg hover:scale-110 transition-transform" type="button">
+<span class="material-symbols-outlined text-display-hero-mobile" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<!-- Bottom Custom Video Controls -->
+<div class="relative z-10 flex flex-col gap-space-xs">
+<!-- RTL Scrubber Timeline -->
+<div class="w-full flex items-center gap-space-xs cursor-pointer" dir="rtl">
+<div class="relative w-full h-2 bg-surface/30 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 42%;"></div>
+</div>
+<span class="text-inverse-on-surface font-label-badge text-label-badge whitespace-nowrap">03:40 / 08:45</span>
+</div>
+<!-- Controls Row -->
+<div class="flex items-center justify-between text-inverse-on-surface pt-space-xs">
+<div class="flex items-center gap-space-md">
+<button aria-label="تشغيل" class="hover:text-primary-fixed transition-colors" type="button">
+<span class="material-symbols-outlined text-headline-md">play_arrow</span>
+</button>
+<button aria-label="تقديم 10 ثوان" class="hover:text-primary-fixed transition-colors" type="button">
+<span class="material-symbols-outlined text-headline-md">fast_forward</span>
+</button>
+<button aria-label="الصوت" class="hover:text-primary-fixed transition-colors" type="button">
+<span class="material-symbols-outlined text-headline-md">volume_up</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm">
+<!-- Slow Motion 0.5x Toggle Button -->
+<button class="px-space-sm py-1 rounded bg-surface/20 hover:bg-primary hover:text-on-primary text-inverse-on-surface font-label-badge text-label-badge flex items-center gap-1 transition-colors" id="slow-mo-btn" type="button">
+<span class="material-symbols-outlined text-body-sm">slow_motion_video</span>
+<span id="speed-label">0.5x تحليل بطيء</span>
+</button>
+<button aria-label="ملء الشاشة" class="hover:text-primary-fixed transition-colors" type="button">
+<span class="material-symbols-outlined text-headline-md">fullscreen</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Chapter Bookmarks Bar -->
+<div aria-label="فصول الفيديو" class="flex items-center gap-space-xs overflow-x-auto py-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-badge text-label-badge whitespace-nowrap flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-label-badge">bookmark</span>
+<span>00:00 - المقدمة والتمهيد</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-badge text-label-badge whitespace-nowrap flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-label-badge">bookmark</span>
+<span>02:15 - وقفة الاستعداد</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-badge text-label-badge whitespace-nowrap flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-label-badge">bookmark</span>
+<span>04:30 - تسارع الدفع وزاوية 45°</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-badge text-label-badge whitespace-nowrap flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-label-badge">bookmark</span>
+<span>06:50 - الهبوط وامتصاص الصدمة</span>
+</button>
+</div>
+</div>
+<!-- Video Side Panel: Notes & Transcript Tabs -->
+<div class="lg:col-span-4 flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center gap-space-xs border-b border-surface-container-high pb-space-sm mb-space-sm">
+<button class="flex-1 py-1.5 text-center font-label-interactive text-label-interactive text-primary border-b-2 border-primary" id="tab-notes-btn" type="button">
+            الملاحظات التدريبية
+          </button>
+<button class="flex-1 py-1.5 text-center font-label-interactive text-label-interactive text-outline hover:text-on-surface" id="tab-transcript-btn" type="button">
+            النص والتفريغ الصوتي
+          </button>
+</div>
+<!-- Notes Tab Content -->
+<div class="flex flex-col gap-space-md flex-1 overflow-y-auto" id="tab-notes-content">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-badge text-label-badge text-primary">
+<span>الدقيقة 03:40</span>
+<span>تحليل زاوية الركبة</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              يجب الانتباه إلى عدم دوران مشط القدم للخارج عند الشروع في وثبة الانتقال، لتفادي إجهاد أربطة الركبة الداخلية.
+            </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-badge text-label-badge text-secondary">
+<span>الدقيقة 05:12</span>
+<span>توجيه النظر</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              تثبيت الرأس بمستوى أفقي مع النظر للأمام يعزز ثبات الجهاز الدهليزي بنسبة 28% مقارنة بالنظر نحو الأرض.
+            </p>
+</div>
+<!-- Add Note Input Field -->
+<div class="mt-auto pt-space-sm flex flex-col gap-space-xs">
+<label class="font-label-badge text-label-badge text-outline">إضافة ملاحظة عند التوقيت الحالي</label>
+<div class="flex items-center gap-space-xs">
+<input class="flex-1 bg-surface-container-low text-on-surface placeholder-outline px-space-sm py-2 rounded-lg text-body-sm font-body-sm outline-none focus:ring-1 focus:ring-primary" placeholder="اكتب ملاحظتك الأكاديمية..." type="text"/>
+<button class="w-9 h-9 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-body-md">send</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Transcript Tab Content (Hidden by default) -->
+<div class="hidden flex-col gap-space-sm flex-1 overflow-y-auto text-on-surface-variant font-body-sm text-body-sm leading-relaxed" id="tab-transcript-content">
+<p><span class="text-primary font-semibold">00:01</span> مرحباً بكم في المحاضرة التطبيقية للوحدة العاشرة حول التوافق الحركي المركب.</p>
+<p><span class="text-primary font-semibold">01:30</span> يبدأ التكنيك الرياضي من الاستقرار التام للجذع، حيث يتم تفعيل العضلات الباسطة.</p>
+<p><span class="text-primary font-semibold">03:40</span> لاحظ التوافق الزمني الدقيق عند الدفع، حيث ينقل اللاعب القوة من الأرض عبر مفصل الفخذ.</p>
+<p><span class="text-primary font-semibold">06:15</span> في مرحلة الهبوط، احرص على امتصاص القوة بتدرج مرن لتأمين المفاصل السفلية.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: STRUCTURED EXERCISE DRILLS -->
+<section class="flex flex-col gap-space-lg mb-space-2xl" id="exercises-section">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-headline-md text-headline-md">
+          04
+        </div>
+<div>
+<span class="font-label-badge text-label-badge text-outline uppercase tracking-wider">التطبيق الميداني المقنن</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">التمرينات التطبيقية لتنمية التوافق الحركي</h2>
+</div>
+</div>
+<span class="px-space-md py-1 rounded-full bg-surface-container-high font-label-badge text-label-badge text-on-surface-variant">
+        بروتوكول تدريبي معتمد
+      </span>
+</div>
+<!-- 3 Structured Drill Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Drill 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-full bg-secondary/10 text-secondary flex items-center justify-center font-headline-md text-headline-md">1</span>
+<span class="px-space-sm py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-badge text-label-badge">الشدة: متوسطة</span>
+</div>
+<h3 class="font-title-card text-title-card text-on-surface">التوافق التكراري المقنن بين المحطات</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            تدريب حركي متسلسل بين 4 أقماع تدريبية متباعدة بمسافة 1.5 متر لضبط التبادل الحركي وتغيير الاتجاه الخطي.
+          </p>
+<!-- Metrics Matrix -->
+<div class="grid grid-cols-3 gap-space-xs bg-surface-container-low p-space-sm rounded-lg text-center mt-space-xs">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary">3</span>
+<span class="font-label-badge text-label-badge text-outline">مجموعات</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary">10</span>
+<span class="font-label-badge text-label-badge text-outline">تكرارات</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-secondary">45 ث</span>
+<span class="font-label-badge text-label-badge text-outline">فترة راحة</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-1 text-tertiary font-label-badge text-label-badge">
+<span class="material-symbols-outlined text-body-sm">check_circle</span>
+<span>الهدف: ترسيخ النمط التوافقي العصبي</span>
+</div>
+<button class="w-full py-2 rounded-lg bg-surface-container text-primary hover:bg-surface-container-high font-label-interactive text-label-interactive flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-body-md">timer</span>
+<span>بدء مؤقت التدريب</span>
+</button>
+</div>
+</div>
+<!-- Drill 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-headline-md text-headline-md">2</span>
+<span class="px-space-sm py-0.5 rounded bg-error-container text-on-error-container font-label-badge text-label-badge">الشدة: عالية</span>
+</div>
+<h3 class="font-title-card text-title-card text-on-surface">تدريب الاستجابة المتغيرة والإشارات البصرية</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            الانتقال السريع نحو إشارات ضوئية عشوائية تظهر على شاشة المحاكاة لقياس سرعة المعالجة الحسية-الحركية.
+          </p>
+<!-- Metrics Matrix -->
+<div class="grid grid-cols-3 gap-space-xs bg-surface-container-low p-space-sm rounded-lg text-center mt-space-xs">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary">4</span>
+<span class="font-label-badge text-label-badge text-outline">تكرارات</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary">8</span>
+<span class="font-label-badge text-label-badge text-outline">إشارات/دقيقة</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-secondary">60 ث</span>
+<span class="font-label-badge text-label-badge text-outline">فترة راحة</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-1 text-error font-label-badge text-label-badge">
+<span class="material-symbols-outlined text-body-sm">health_and_safety</span>
+<span>تنبيه: يلزم الإحماء المفصلي التام</span>
+</div>
+<button class="w-full py-2 rounded-lg bg-surface-container text-primary hover:bg-surface-container-high font-label-interactive text-label-interactive flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-body-md">play_arrow</span>
+<span>تشغيل مولد الإشارات</span>
+</button>
+</div>
+</div>
+<!-- Drill 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center font-headline-md text-headline-md">3</span>
+<span class="px-space-sm py-0.5 rounded bg-tertiary-container/15 text-tertiary font-label-badge text-label-badge">الشدة: متدرجة</span>
+</div>
+<h3 class="font-title-card text-title-card text-on-surface">التدريب الحركي المدمج (وثب + دوران 90°)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            الدمج بين الارتقاء الرأسي السريع والدوران بزاوية قائمة مع الهبوط التوازني فوق قاعدة ارتكاز محددة.
+          </p>
+<!-- Metrics Matrix -->
+<div class="grid grid-cols-3 gap-space-xs bg-surface-container-low p-space-sm rounded-lg text-center mt-space-xs">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary">3</span>
+<span class="font-label-badge text-label-badge text-outline">مجموعات</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary">6</span>
+<span class="font-label-badge text-label-badge text-outline">قفزات/جهة</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-secondary">90 ث</span>
+<span class="font-label-badge text-label-badge text-outline">فترة راحة</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-1 text-primary font-label-badge text-label-badge">
+<span class="material-symbols-outlined text-body-sm">sports_score</span>
+<span>الهدف: ضبط مركز الثقل أثناء الدوران</span>
+</div>
+<button class="w-full py-2 rounded-lg bg-surface-container text-primary hover:bg-surface-container-high font-label-interactive text-label-interactive flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-body-md">assignment_turned_in</span>
+<span>تسجيل نتائج المحاولة</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: INTERACTIVE OBSERVATION CHECKLIST & ASSESSMENT -->
+<section class="flex flex-col gap-space-lg mb-space-2xl" id="assessment-section">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center font-headline-md text-headline-md">
+          05
+        </div>
+<div>
+<span class="font-label-badge text-label-badge text-outline uppercase tracking-wider">التقويم والقياس الحركي</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">بطاقة الملاحظة المقننة ورصد درجات الإتقان</h2>
+</div>
+</div>
+<span class="px-space-md py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-badge text-label-badge">
+        استمارة تقييم فورية
+      </span>
+</div>
+<!-- Assessment Container: Checklist + Dynamic Live Score Card -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Motor Criteria Checklist -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-primary font-title-card text-title-card">
+<span class="material-symbols-outlined">checklist</span>
+<h3>معايير الأداء الحركي المستهدفة للتقييم</h3>
+</div>
+<span class="font-label-badge text-label-badge text-outline">حدد المعايير المنجزة أثناء التطبيق</span>
+</div>
+<!-- Checklist Items -->
+<div class="flex flex-col gap-space-sm" id="assessment-checklist">
+<!-- Item 1 -->
+<label class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-space-md">
+<input checked="" class="criterion-checkbox w-5 h-5 rounded text-primary focus:ring-primary focus:ring-offset-0 cursor-pointer" data-weight="20" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-interactive text-label-interactive text-on-surface">وضعية الانثناء المبدئي بزاوية صحيحة (110°-120°)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ثبات القدمين وتساوي توزيع ثقل الجسم قبل الشروع بالانتقال.</span>
+</div>
+</div>
+<span class="font-label-badge text-label-badge text-primary bg-primary/10 px-2.5 py-1 rounded-full">20 نقطة</span>
+</label>
+<!-- Item 2 -->
+<label class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-space-md">
+<input checked="" class="criterion-checkbox w-5 h-5 rounded text-primary focus:ring-primary focus:ring-offset-0 cursor-pointer" data-weight="25" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-interactive text-label-interactive text-on-surface">التوافق الكينماتيكي بين دفع القدم وتوجيه الذراع</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">تزامن الدفع الانفجاري مع الذراع المقابلة في مسار انسيابي مستقيم.</span>
+</div>
+</div>
+<span class="font-label-badge text-label-badge text-primary bg-primary/10 px-2.5 py-1 rounded-full">25 نقطة</span>
+</label>
+<!-- Item 3 -->
+<label class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-space-md">
+<input checked="" class="criterion-checkbox w-5 h-5 rounded text-primary focus:ring-primary focus:ring-offset-0 cursor-pointer" data-weight="25" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-interactive text-label-interactive text-on-surface">الاستقرار الديناميكي للجذع في مرحلة الطيران (Apex)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">عدم ميلان العمود الفقري جانباً والمحافظة على استقامة خط الكتفين.</span>
+</div>
+</div>
+<span class="font-label-badge text-label-badge text-primary bg-primary/10 px-2.5 py-1 rounded-full">25 نقطة</span>
+</label>
+<!-- Item 4 -->
+<label class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-space-md">
+<input class="criterion-checkbox w-5 h-5 rounded text-primary focus:ring-primary focus:ring-offset-0 cursor-pointer" data-weight="20" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-interactive text-label-interactive text-on-surface">مرونة الهبوط وتشتيت طاقة الارتطام</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">النزول على المشطين أولاً ثم الكعبين دون إحداث ارتداد عنيف.</span>
+</div>
+</div>
+<span class="font-label-badge text-label-badge text-outline bg-surface-container-high px-2.5 py-1 rounded-full">20 نقطة</span>
+</label>
+<!-- Item 5 -->
+<label class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-space-md">
+<input class="criterion-checkbox w-5 h-5 rounded text-primary focus:ring-primary focus:ring-offset-0 cursor-pointer" data-weight="10" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-interactive text-label-interactive text-on-surface">استعادة الوضع الرأسي في زمن قياسي (&lt; 0.6 ثانية)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">الاستعداد الفوري لبدء حركة تالية دون فقدان التوازن.</span>
+</div>
+</div>
+<span class="font-label-badge text-label-badge text-outline bg-surface-container-high px-2.5 py-1 rounded-full">10 نقاط</span>
+</label>
+</div>
+</div>
+<!-- Live Score & Diagnostic Gauge Panel -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col items-center justify-between text-center h-full">
+<div class="w-full flex items-center justify-between">
+<span class="font-label-interactive text-label-interactive text-on-surface">مؤشر الإتقان المحسوب</span>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-badge text-label-badge" id="score-status-badge">مستوى متقدم</span>
+</div>
+<!-- Circular Radial Progress Chart -->
+<div class="relative w-44 h-44 my-space-md flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+<!-- Background ring -->
+<circle cx="50" cy="50" fill="none" r="40" stroke="#eaedff" stroke-width="8"></circle>
+<!-- Active progress circle -->
+<circle class="transition-all duration-500 ease-out" cx="50" cy="50" fill="none" id="score-circle-bar" r="40" stroke="#0f766e" stroke-dasharray="251.2" stroke-dashoffset="75.36" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="font-metric-digit text-headline-xl text-primary" id="score-number-display">70</span>
+<span class="font-label-badge text-label-badge text-outline">من أصل 100 نقطة</span>
+</div>
+</div>
+<!-- Diagnostic Feedback Message -->
+<div class="w-full bg-surface-container-low p-space-md rounded-xl text-right flex flex-col gap-1">
+<span class="font-label-badge text-label-badge text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-body-sm">insights</span>
+<span>التغذية الراجعة التشخيصية</span>
+</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="score-feedback-text">
+              الأداء ممتاز في مرحلتي الإعداد والذروة. يوصى بإعادة تكرار تمرين امتصاص الهبوط لإتقان النقاط المتبقية والوصول إلى درجة الإتقان الكامل (90+).
+            </p>
+</div>
+<!-- Action Buttons Group -->
+<div class="w-full flex flex-col gap-space-xs mt-space-md">
+<button class="w-full py-2.5 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-interactive text-label-interactive flex items-center justify-center gap-2 transition-colors" id="reset-assessment-btn" type="button">
+<span class="material-symbols-outlined text-body-md">refresh</span>
+<span>إعادة ضبط التقييم</span>
+</button>
+<button class="w-full py-2.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-interactive text-label-interactive flex items-center justify-center gap-2 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-body-md">verified</span>
+<span>اعتماد النتيجة في السجل</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Inter-Unit Navigation Controller -->
+<footer class="mt-space-lg pt-space-lg border-t border-surface-container-high flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<!-- Previous Unit Link -->
+<a class="w-full sm:w-auto px-space-lg py-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low shadow-sm flex items-center gap-space-md transition-all group" href="#">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-headline-md">arrow_forward</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-badge text-label-badge text-outline">الوحدة السابقة</span>
+<span class="font-label-interactive text-label-interactive text-on-surface">الوحدة التاسعة: توازن القوى الارتدادية</span>
+</div>
+</a>
+<!-- Unit Completion Badge -->
+<div class="flex items-center gap-space-xs text-primary font-label-badge text-label-badge">
+<span class="material-symbols-outlined text-body-sm">school</span>
+<span>معايير الاعتماد الأكاديمي الحركي</span>
+</div>
+<!-- Next Unit Link -->
+<a class="w-full sm:w-auto px-space-lg py-space-md rounded-xl bg-primary-container text-on-primary hover:bg-primary shadow-sm flex items-center justify-between sm:justify-start gap-space-md transition-all" href="#">
+<div class="flex flex-col text-right">
+<span class="font-label-badge text-label-badge text-on-primary/80">الوحدة التالية</span>
+<span class="font-label-interactive text-label-interactive text-on-primary">الوحدة الحادية عشرة: استراتيجيات المناورة والسرعة</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-headline-md">arrow_back</span>
+</div>
+</a>
+</footer>
+</div>
+<script>
+  // Dynamic Tab Switcher for Video Notes vs Transcript
+  const notesBtn = document.getElementById('tab-notes-btn');
+  const transcriptBtn = document.getElementById('tab-transcript-btn');
+  const notesContent = document.getElementById('tab-notes-content');
+  const transcriptContent = document.getElementById('tab-transcript-content');
+
+  if (notesBtn && transcriptBtn && notesContent && transcriptContent) {
+    notesBtn.addEventListener('click', () => {
+      notesBtn.classList.add('text-primary', 'border-b-2', 'border-primary');
+      notesBtn.classList.remove('text-outline');
+      transcriptBtn.classList.remove('text-primary', 'border-b-2', 'border-primary');
+      transcriptBtn.classList.add('text-outline');
+
+      notesContent.classList.remove('hidden');
+      transcriptContent.classList.add('hidden');
+    });
+
+    transcriptBtn.addEventListener('click', () => {
+      transcriptBtn.classList.add('text-primary', 'border-b-2', 'border-primary');
+      transcriptBtn.classList.remove('text-outline');
+      notesBtn.classList.remove('text-primary', 'border-b-2', 'border-primary');
+      notesBtn.classList.add('text-outline');
+
+      transcriptContent.classList.remove('hidden');
+      notesContent.classList.add('hidden');
+    });
+  }
+
+  // Slow-Motion Toggle
+  const slowMoBtn = document.getElementById('slow-mo-btn');
+  const speedLabel = document.getElementById('speed-label');
+  let isSlow = true;
+
+  if (slowMoBtn && speedLabel) {
+    slowMoBtn.addEventListener('click', () => {
+      isSlow = !isSlow;
+      if (isSlow) {
+        speedLabel.textContent = '0.5x تحليل بطيء';
+        slowMoBtn.classList.add('bg-primary', 'text-on-primary');
+        slowMoBtn.classList.remove('bg-surface/20');
+      } else {
+        speedLabel.textContent = '1.0x سرعة عادية';
+        slowMoBtn.classList.remove('bg-primary', 'text-on-primary');
+        slowMoBtn.classList.add('bg-surface/20');
+      }
+    });
+  }
+
+  // Interactive Lightbox Modal Logic
+  const lightboxModal = document.getElementById('gallery-lightbox');
+  const lightboxTitle = document.getElementById('lightbox-modal-title');
+  const lightboxDesc = document.getElementById('lightbox-modal-desc');
+  const lightboxCloseBtn = document.getElementById('lightbox-close-btn');
+  const lightboxConfirmBtn = document.getElementById('lightbox-confirm-btn');
+  const lightboxBtns = document.querySelectorAll('.lightbox-btn');
+
+  const closeLightbox = () => {
+    if (lightboxModal) {
+      lightboxModal.classList.add('hidden');
+      lightboxModal.classList.remove('flex');
+    }
+  };
+
+  lightboxBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const title = btn.getAttribute('data-title');
+      const desc = btn.getAttribute('data-desc');
+      if (lightboxTitle) lightboxTitle.textContent = title || 'تفاصيل المرحلة';
+      if (lightboxDesc) lightboxDesc.textContent = desc || '';
+      if (lightboxModal) {
+        lightboxModal.classList.remove('hidden');
+        lightboxModal.classList.add('flex');
+      }
+    });
+  });
+
+  if (lightboxCloseBtn) lightboxCloseBtn.addEventListener('click', closeLightbox);
+  if (lightboxConfirmBtn) lightboxConfirmBtn.addEventListener('click', closeLightbox);
+
+  // Dynamic Assessment Live Score & Gauge Calculation
+  const checkboxes = document.querySelectorAll('.criterion-checkbox');
+  const scoreDisplay = document.getElementById('score-number-display');
+  const scoreBar = document.getElementById('score-circle-bar');
+  const scoreBadge = document.getElementById('score-status-badge');
+  const scoreFeedback = document.getElementById('score-feedback-text');
+  const resetBtn = document.getElementById('reset-assessment-btn');
+
+  const calculateScore = () => {
+    let totalScore = 0;
+    checkboxes.forEach((cb) => {
+      if (cb.checked) {
+        totalScore += parseInt(cb.getAttribute('data-weight') || '0', 10);
+      }
+    });
+
+    if (scoreDisplay) scoreDisplay.textContent = totalScore;
+
+    // Radius is 40 -> circumference is 2 * pi * 40 ~= 251.2
+    if (scoreBar) {
+      const circumference = 251.2;
+      const offset = circumference - (totalScore / 100) * circumference;
+      scoreBar.style.strokeDashoffset = offset;
+    }
+
+    if (scoreBadge && scoreFeedback) {
+      if (totalScore >= 85) {
+        scoreBadge.textContent = 'إتقان استثنائي';
+        scoreBadge.className = 'px-space-sm py-0.5 rounded-full bg-tertiary-container/15 text-tertiary font-label-badge text-label-badge';
+        scoreFeedback.textContent = 'أداء كينماتيكي مثالي يطابق كافة المعايير الميكانيكية المعتمدة. الطالب جاهز للانتقال للوحدة التالية مباشرة.';
+      } else if (totalScore >= 60) {
+        scoreBadge.textContent = 'مستوى متقدم';
+        scoreBadge.className = 'px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-badge text-label-badge';
+        scoreFeedback.textContent = 'الأداء متماسك في المراحل الأساسية، ويحتاج الطالب لتركيز إضافي على مرونة زوايا الهبوط لامتصاص كامل الصدمة.';
+      } else {
+        scoreBadge.textContent = 'بحاجة لإعادة المعايرة';
+        scoreBadge.className = 'px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container font-label-badge text-label-badge';
+        scoreFeedback.textContent = 'هناك اختلال في توافق الأطراف وتمركز ثقل الجسم. يرجى مراجعة الفيديو التحليلي ببطء وتكرار التمرين الأول.';
+      }
+    }
+  };
+
+  checkboxes.forEach((cb) => {
+    cb.addEventListener('change', calculateScore);
+  });
+
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      checkboxes.forEach((cb) => (cb.checked = false));
+      calculateScore();
+    });
+  }
+
+  // Smooth scroll sync for navigation bar
+  const navBtns = document.querySelectorAll('.unit-nav-btn');
+  navBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      navBtns.forEach((b) => {
+        b.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+        b.classList.add('text-on-surface-variant');
+      });
+      btn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+      btn.classList.remove('text-on-surface-variant');
+    });
+  });
+</script></main></div></body></html>
